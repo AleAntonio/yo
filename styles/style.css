@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(5, 39, 83);
+  padding: 20px;
+}
+header div {
+  background-color: brown;
+}
+header div img {
+  width: 250px;
+  background-color: blue;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(90, 71, 134);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  padding: 15px;
+  margin: 15px;
+  background-color: cornflowerblue;
+}
+nav ul li a {
+  color: black;
+}
+
+main {
+  background-color: pink;
+  padding: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+}
+main div h2 {
+  background-color: rgb(44, 70, 221);
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 15px;
+ 
+}
+main div p {
+  text-align: justify;
+}
+
+.container {
+  padding: 20px;
+  background-color: coral;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  margin: 20px;
+}
+
+.grid-item img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.mira-por-hbo-max {
+  
+  background-color: darkslategray;
+  padding: 30px;
+  margin: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+main img {
+  width: 150px;
+  height: 150px;
+  margin-right: 150px;
+  margin-left: 50px;
+
+}
+
+footer {
+  background-color: rgb(134, 91, 61);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+
+footer div nav ul {
+  list-style: none;
+}
+footer div nav li {
+  padding: 10px;
+  margin: 10px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*media querie o punto de quibre*/
+/*para tablet*/
+
+@media(max-width:880px)
+{
+  header{
+  background-color:lightblue;
+flex-direction: column;
+}
+  footer {
+    background-color: darkkhaki;
+  }
+}
+/*para celular*/
+
+@media(max-width: 480px) {
+  header {background-color: deeppink;
+  flex-direction: column;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  main {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3m_eXecxcCiA7Fiu3RXLkZp4jYP3q6mFGA&usqp=CAU);
+  }
+  footer {
+    background-color: darkkhaki;
+  }
+}
